@@ -14,7 +14,9 @@ form.addEventListener("submit", function (e) {
         .then((data) => {
             // Target where the result will be displayed.
             document.getElementById("user-list").innerHTML = `
-           <a target= "_blank" href= "https://www.github.com/${userName}"> <img src= "${data.avatar_url}"/></a>
+            <p>Hi I am @${userName}</p>
+            <a target= "_blank" href= "https://www.github.com/${userName}">
+           <p >Click here to access my GitHub profile</p><img src= "${data.avatar_url}"/></a>
             `
         });
 }); 
